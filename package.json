@@ -1,5 +1,5 @@
 {
-  "name": "bluzelle",
+  "name": "bluzelleHack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/propillow/Bluzelle-Project/issues"
   },
-  "homepage": "https://github.com/propillow/Bluzelle-Project#readme"
+  "homepage": "https://github.com/propillow/Bluzelle-Project#readme",
+  "dependencies": {
+    "bluzelle": "^0.8.1",
+    "crypto-js": "^3.1.9-1"
+  }
 }
