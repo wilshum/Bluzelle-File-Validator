@@ -1,0 +1,16 @@
+html{
+    height: 100%; 
+    width: 100%;
+}
+
+#drop{
+    text-align: center; 
+    width: 300px;
+    height: 200px;        
+    margin: auto;
+    border: dashed 2px gray;
+}
+file{
+    max-height:200px; 
+    max-width:300px;
+}
