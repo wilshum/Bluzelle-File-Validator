@@ -107,6 +107,5 @@ function dropHandler_query(evt) { //evt 為 DragEvent 物件
             table_query.checksum = hash.toString()
         }
     }
-
     reader.readAsArrayBuffer(file)
 }
