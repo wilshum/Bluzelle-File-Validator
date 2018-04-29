@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>測試</title>
+    <title>Team Null</title>
 
     <link rel="stylesheet" type="text/css" href="stylesheets/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/library.css">
@@ -19,10 +19,13 @@
                     <i class="home icon"></i> Home
                 </a>
                 <a class="item" data-tab="tab-register">
-                    <i class="grid layout icon"></i> Register
+                    <i class="file icon"></i> Register
                 </a>
                 <a class="item" data-tab="tab-query">
-                    <i class="mail icon"></i> Query
+                    <i class="search icon"></i> Query
+                </a>
+                <a id="tab-list" class="item" data-tab="tab-list">
+                    <i class="list icon"></i> List
                 </a>
             </div>
         </div>
@@ -30,8 +33,15 @@
 
     <!-- Home -->
     <section class="ui tab active" data-tab="tab-home">
+        <div class="ui text container h1-box">
+            <h1>Team Null</h1>
+        </div>
+
         <div class="ui text container margin-bottom">
-            <h2 class="ui header">About</h2>
+            <h2 class="ui horizontal divider header">
+                <i class="tag icon"></i>
+                About
+            </h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis
                 natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
@@ -44,7 +54,10 @@
             </p>
         </div>
         <div class="ui text container margin-bottom">
-            <h2 class="ui header">What problem does this solve?</h2>
+            <h2 class="ui horizontal divider header">
+                <i class="cogs icon"></i>
+                What problem does this solve?
+            </h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis
                 natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
@@ -57,7 +70,10 @@
             </p>
         </div>
         <div class="ui text container">
-            <h2 class="ui header">Team</h2>
+            <h2 class="ui horizontal divider header">
+                <i class="tag icon"></i>
+                Team
+            </h2>
             <div class="ui grid">
                 <div class="three column row">
                     <div class="column">
@@ -66,7 +82,7 @@
                                 <img src="images/kristy.png">
                             </div>
                             <div class="content">
-                                <a class="header">Kristy</a>
+                                <a class="header">Wen Xing Pan</a>
                                 <div class="meta">
                                     <span class="date">Joined in 2013</span>
                                 </div>
@@ -82,7 +98,7 @@
                                 <img src="images/kristy.png">
                             </div>
                             <div class="content">
-                                <a class="header">Kristy</a>
+                                <a class="header">Wilson Shum</a>
                                 <div class="meta">
                                     <span class="date">Joined in 2013</span>
                                 </div>
@@ -98,7 +114,7 @@
                                 <img src="images/kristy.png">
                             </div>
                             <div class="content">
-                                <a class="header">Kristy</a>
+                                <a class="header">Danny Lai</a>
                                 <div class="meta">
                                     <span class="date">Joined in 2013</span>
                                 </div>
@@ -115,18 +131,26 @@
 
     <!-- Register -->
     <section class="ui tab" data-tab="tab-register">
-        <div class="ui container">
+        <div class="ui text container">
             <div class="ui grid">
+                <!-- left -->
                 <div class="six wide column">
                     <div class="box" ondragover="dragoverHandler(event)" ondrop="dropHandler_register(event)">
-                        <img id="down" src="images/down.svg">
+                        <i class="huge download icon"></i>
                         <label for="file">
                             <strong>Choose a file</strong>
                             <span class="box__dragndrop"> or drag it here</span>.
                         </label>
                     </div>
                 </div>
-                <div class="eight wide column">
+                <!-- right -->
+                <div class="ten wide column">
+                    <div id="register-console" class="ui icon message">
+                        <i class="question circle outline icon"></i>
+                        <div class="header">
+                            please select file
+                        </div>
+                    </div>
                     <table class="ui definition table">
                         <tbody>
                             <tr>
@@ -135,7 +159,9 @@
                             </tr>
                             <tr>
                                 <td>Checksum (SHA256)</td>
-                                <td id="checksum-register"></td>
+                                <td id="checksum-register">
+                                    <i></i>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -159,41 +185,63 @@
 
     <!-- Query -->
     <section class="ui tab" data-tab="tab-query">
-        <div class="ui container">
+        <div class="ui text container">
             <div class="ui grid">
+                <!-- left -->
                 <div class="six wide column">
                     <div class="box" ondragover="dragoverHandler(event)" ondrop="dropHandler_query(event)">
-                        <img id="down" src="images/down.svg">
+                        <i class="huge download icon"></i>
                         <label for="file">
                             <strong>Choose a file</strong>
                             <span class="box__dragndrop"> or drag it here</span>.
                         </label>
                     </div>
                 </div>
-                <div class="eight wide column">
+                <!-- right -->
+                <div class="ten wide column">
+                    <div id="query-console" class="ui icon message">
+                        <i class="question circle outline icon"></i>
+                        <div class="header">
+                            please select file
+                        </div>
+                    </div>
                     <table class="ui definition table">
                         <tbody>
                             <tr>
                                 <td>File name</td>
-                                <td id="file_name-query">...</td>
+                                <td id="file_name-query"></td>
                             </tr>
                             <tr>
                                 <td>Checksum (SHA256)</td>
-                                <td id="checksum-query">...</td>
+                                <td id="checksum-query">
+                                    <i></i>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
-                    <div class="ui attached icon info message margin-bottom">
-                        <i class="help circle icon"></i>
-                        <div class="content">
-                            no file
-                        </div>
-                    </div>
                     <button id="query_bt" class="ui primary button">
                         verify
                     </button>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- List -->
+    <section class="ui tab" data-tab="tab-list">
+        <div class="ui text container">
+            <table class="ui celled striped table">
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            Git Repository
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="list">
+
+                </tbody>
+            </table>
         </div>
     </section>
 

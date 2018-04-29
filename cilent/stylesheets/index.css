@@ -1,3 +1,21 @@
+html,
+body {
+    min-width: 800px;
+}
+
+.h1-box {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-box h1 {
+    font-size: 10rem;
+    text-align: center;
+}
+
 .box {
     font-size: 1.25rem;
     background-color: #c8dadf;
@@ -11,11 +29,21 @@
     outline: 2px dashed #92b0b3;
     outline-offset: -10px;
     width: 100%;
-    height: 33vw;
+    height: 245px;
 }
 
-img#down {
-    width: 30%;
-    height: 30%;
-    margin-bottom: 5%;
+i.download {
+    margin: 0 0 1rem 0;
+}
+
+tr td {
+    height: 5rem;
+}
+
+tr td:nth-child(1) {
+    width: 25%;
+}
+
+tr td:nth-child(2) {
+    width: 75%;
 }
