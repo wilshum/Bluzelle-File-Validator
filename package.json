@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/propillow/Bluzelle-Project#readme",
   "dependencies": {
-    "bluzelle": "^0.8.1",
+    "bluzelle": "^0.8.2",
     "crypto-js": "^3.1.9-1"
   }
 }
