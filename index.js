@@ -1,27 +1,16 @@
 const bluzelle = require('bluzelle');
 const CryptoJS = require("crypto-js");
-var express = require('express');
 
 var app = express();
 var server = require('http').Server(app);
 
 const SERVER_PORT = 8000;
 
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/crypto-js/index.html');
-});
-
-app.use('/crypto-js', express.static(__dirname + '/crypto-js'));
-
-server.listen(process.env.PORT || SERVER_PORT);
-console.log('Server Started! localhost: ' + SERVER_PORT);
-
 const IP = '13.78.131.140:51010';
 const UUID  = "7862031e-e253-4bc2-81d5-7bb42276cd5d";
 
 bluzelle.connect('ws://' + IP, UUID);
 console.log('Bluzelle Connected!');
-
 
 var fileContentHash = "13";
 
