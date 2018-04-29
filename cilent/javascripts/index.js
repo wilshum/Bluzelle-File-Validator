@@ -1,7 +1,5 @@
 $(document).ready(() => {
-
     $('.menu .item').tab()
-
 })
 
 function dragoverHandler(evt) {
@@ -23,14 +21,10 @@ function dropHandler_register(evt) { //evt 為 DragEvent 物件
 
             console.log(file)
 
-            $('#company').text()
-            $('#file_name').text(file.name)
-            $('#program').text()
-            $('#version').text()
-            $('#checksum').text(hash.toString())
+            $('#file_name-register').text(file.name)
+            $('#checksum-register').text(hash.toString())
         }
     }
-
     reader.readAsArrayBuffer(file)
 }
 
@@ -49,11 +43,8 @@ function dropHandler_query(evt) { //evt 為 DragEvent 物件
 
             console.log(file)
 
-            $('#company').text()
-            $('#file_name').text(file.name)
-            $('#program').text()
-            $('#version').text()
-            $('#checksum').text(hash.toString())
+            $('#file_name-query').text(file.name)
+            $('#checksum-query').text(hash.toString())
         }
     }
 
