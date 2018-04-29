@@ -145,23 +145,21 @@
                 </div>
                 <!-- right -->
                 <div class="ten wide column">
-                    <div id="register-console" class="ui icon message">
-                        <i class="question circle outline icon"></i>
+                    <div id="console_register" class="ui icon message" v-bind:class="[color]">
+                        <i class="icon" v-bind:class="[icon]"></i>
                         <div class="header">
-                            please select file
+                            {{ message }}
                         </div>
                     </div>
-                    <table class="ui definition table">
+                    <table id="table_register" class="ui definition table">
                         <tbody>
                             <tr>
                                 <td>File name</td>
-                                <td id="file_name-register"></td>
+                                <td>{{ fileName }}</td>
                             </tr>
                             <tr>
                                 <td>Checksum (SHA256)</td>
-                                <td id="checksum-register">
-                                    <i></i>
-                                </td>
+                                <td>{{ checksum }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -177,7 +175,7 @@
                             </div>
                         </div>
                     </form>
-                    <button id="register_bt" class="ui primary button">Submit</button>
+                    <button id="bt-register" class="ui primary button">Submit</button>
                 </div>
             </div>
         </div>
@@ -199,27 +197,25 @@
                 </div>
                 <!-- right -->
                 <div class="ten wide column">
-                    <div id="query-console" class="ui icon message">
-                        <i class="question circle outline icon"></i>
+                    <div id="console_query" class="ui icon message" v-bind:class="[color]">
+                        <i class="icon" v-bind:class="[icon]"></i>
                         <div class="header">
-                            please select file
+                            {{ message }}
                         </div>
                     </div>
-                    <table class="ui definition table">
+                    <table id="table_query" class="ui definition table">
                         <tbody>
                             <tr>
                                 <td>File name</td>
-                                <td id="file_name-query"></td>
+                                <td>{{ fileName }}</td>
                             </tr>
                             <tr>
                                 <td>Checksum (SHA256)</td>
-                                <td id="checksum-query">
-                                    <i></i>
-                                </td>
+                                <td>{{ checksum }}</td>
                             </tr>
                         </tbody>
                     </table>
-                    <button id="query_bt" class="ui primary button">
+                    <button id="bt-query" class="ui primary button">
                         verify
                     </button>
                 </div>
@@ -250,6 +246,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="javascripts/semantic.min.js"></script>
     <script src="javascripts/crypto-js.js"></script>
     <script src="javascripts/index.js"></script>
