@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>測試</title>
+
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="ui attached stackable menu">
+            <div class="ui container">
+                <a class="item active" data-tab="tab-home">
+                    <i class="home icon"></i> Home
+                </a>
+                <a class="item" data-tab="tab-register">
+                    <i class="grid layout icon"></i> Register
+                </a>
+                <a class="item" data-tab="tab-query">
+                    <i class="mail icon"></i> Query
+                </a>
+                <div class="ui simple dropdown item">
+                    More
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item">
+                            <i class="edit icon"></i> Edit Profile</a>
+                        <a class="item">
+                            <i class="globe icon"></i> Choose Language</a>
+                        <a class="item">
+                            <i class="settings icon"></i> Account Settings</a>
+                    </div>
+                </div>
+                <div class="right item">
+                    <div class="ui input">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="ui tab active" data-tab="tab-home">
+        <div class="ui text container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis
+                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+                felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+                ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+                rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+            </p>
+        </div>
+        <div class="ui container">
+            <div class="ui grid">
+                <div class="three column row">
+                    <div class="column">
+                        <div class="ui card">
+                            <div class="image">
+                                <img src="images/kristy.png">
+                            </div>
+                            <div class="content">
+                                <a class="header">Kristy</a>
+                                <div class="meta">
+                                    <span class="date">Joined in 2013</span>
+                                </div>
+                                <div class="description">
+                                    Kristy is an art director living in New York.
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <a>
+                                    <i class="user icon"></i>
+                                    22 Friends
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui card">
+                            <div class="image">
+                                <img src="images/kristy.png">
+                            </div>
+                            <div class="content">
+                                <a class="header">Kristy</a>
+                                <div class="meta">
+                                    <span class="date">Joined in 2013</span>
+                                </div>
+                                <div class="description">
+                                    Kristy is an art director living in New York.
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <a>
+                                    <i class="user icon"></i>
+                                    22 Friends
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui card">
+                            <div class="image">
+                                <img src="images/kristy.png">
+                            </div>
+                            <div class="content">
+                                <a class="header">Kristy</a>
+                                <div class="meta">
+                                    <span class="date">Joined in 2013</span>
+                                </div>
+                                <div class="description">
+                                    Kristy is an art director living in New York.
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <a>
+                                    <i class="user icon"></i>
+                                    22 Friends
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register -->
+    <section class="ui tab" data-tab="tab-register">
+        <div class="ui container">
+            <div class="ui grid">
+                <div class="six wide column">
+                    <div class="box" ondragover="dragoverHandler(event)" ondrop="dropHandler_register(event)">
+                        <img id="down" src="images/down.svg">
+                        <label for="file">
+                            <strong>Choose a file</strong>
+                            <span class="box__dragndrop"> or drag it here</span>.
+                        </label>
+                    </div>
+                </div>
+                <div class="eight wide column">
+                    <form class="ui form">
+                        <div class="field">
+                            <label>Company</label>
+                            <input type="text" name="first-name">
+                        </div>
+                        <div class="field">
+                            <label>File name</label>
+                            <input type="text" name="last-name">
+                        </div>
+                        <div class="field">
+                            <label>Version</label>
+                            <input type="text" name="last-name">
+                        </div>
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" tabindex="0">
+                                <label>I agree to the Terms and Conditions</label>
+                            </div>
+                        </div>
+                        <button class="ui button" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Query -->
+    <section class="ui tab" data-tab="tab-query">
+        <div class="ui container">
+            <div class="ui grid">
+                <div class="six wide column">
+                    <div class="drop" ondragover="dragoverHandler(event)" ondrop="dropHandler_query(event)">
+                        drop here to Query file
+                    </div>
+                </div>
+                <div class="eight wide column">
+                    <table class="ui definition table">
+                        <tbody>
+                            <tr>
+                                <td>Company</td>
+                                <td id="company"></td>
+                            </tr>
+                            <tr>
+                                <td>File name</td>
+                                <td id="file_name"></td>
+                            </tr>
+                            <tr>
+                                <td>Program</td>
+                                <td id="program"></td>
+                            </tr>
+                            <tr>
+                                <td>Version</td>
+                                <td id="version"></td>
+                            </tr>
+                            <tr>
+                                <td>Checksum (SHA256)</td>
+                                <td id="checksum"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="ui attached icon info message">
+                        <i class="help circle icon"></i>
+                        <div class="content">
+                            no file
+                        </div>
+                    </div>
+                    <button class="ui primary button">
+                        verify
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="ui container">
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="semantic/dist/semantic.js"></script>
+    <script src="javascripts/crypto-js.js"></script>
+    <script src="javascripts/index.js"></script>
+</body>
+
+</html>
