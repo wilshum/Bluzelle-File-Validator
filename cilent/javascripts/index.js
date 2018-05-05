@@ -69,7 +69,7 @@ function dropHandler_register(evt) { //evt 為 DragEvent 物件
         if (evt.target.readyState == FileReader.DONE) { // DONE == 2
             console_register.color = COLOR.info
             console_register.icon = ICON.check
-            console_register.message = 'ready to register'
+            console_register.message = 'Ready to register'
 
             let wordArray = CryptoJS.lib.WordArray.create(evt.target.result)
             let hash = CryptoJS.SHA256(wordArray)
@@ -98,7 +98,7 @@ function dropHandler_query(evt) { //evt 為 DragEvent 物件
         if (evt.target.readyState == FileReader.DONE) { // DONE == 2
             console_query.color = COLOR.info
             console_query.icon = ICON.check
-            console_query.message = 'ready to verify'
+            console_query.message = 'Ready to verify'
 
             let wordArray = CryptoJS.lib.WordArray.create(evt.target.result)
             let hash = CryptoJS.SHA256(wordArray)

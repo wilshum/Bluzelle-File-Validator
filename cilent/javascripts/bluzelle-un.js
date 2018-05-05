@@ -13,14 +13,14 @@ $('#bt-register').click(() => {
 		if (hasMyKey) {
 			console_register.color = COLOR.negative
 			console_register.icon = ICON.times
-			console_register.message = 'the file is already exists'
+			console_register.message = 'The file already exists'
 		} else {
 			bluzelle.create(table_register.fileName, {
 				checksum: table_register.checksum
 			}).then(() => {
 				console_register.color = COLOR.positive
 				console_register.icon = ICON.check
-				console_register.message = 'record inserted'
+				console_register.message = 'Record Inserted'
 			}, error => {
 				console.log(error)
 			})
@@ -40,17 +40,17 @@ $('#bt-query').click(() => {
 		if (!hasMyKey) {
 			console_query.color = COLOR.negative
 			console_query.icon = ICON.times
-			console_query.message = 'can\'t find this file'
+			console_query.message = 'Can\'t find this file'
 		} else {
 			bluzelle.read(table_query.fileName).then(value => {
 				if (value.checksum != table_query.checksum) {
 					console_query.color = COLOR.negative
 					console_query.icon = ICON.check
-					console_query.message = 'the file is illegal'
+					console_query.message = 'The file is illegal'
 				} else {
 					console_query.color = COLOR.positive
 					console_query.icon = ICON.check
-					console_query.message = 'the file is Valid'
+					console_query.message = 'The file is valid'
 				}
 			}, error => {
 				console.log(error)
