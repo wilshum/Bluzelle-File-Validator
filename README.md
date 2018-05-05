@@ -5,4 +5,4 @@ A file validation web application to ensure the file that has been transferred f
 ### How to Run
 run cilent/index.html
 
-[Bluzelle-Project]https://user-images.githubusercontent.com/11578999/39667183-1fec9dde-5065-11e8-8abd-82395a9639a1.png
+[Bluzelle-Project](https://user-images.githubusercontent.com/11578999/39667183-1fec9dde-5065-11e8-8abd-82395a9639a1.png)
