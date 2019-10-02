@@ -4,7 +4,7 @@ A file validation web application to ensure the file that has been transferred f
 
 ### How to run application
 
-Open index.html file in a web browser
+- Open index.html file in a web browser
 - Navigate through the UI and register the file
 - Send the file through any file transfer protocol
 - Check to see if the file contains the same content
